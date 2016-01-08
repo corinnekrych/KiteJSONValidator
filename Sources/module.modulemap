@@ -1,0 +1,6 @@
+framework module KiteJSONValidator {
+  umbrella header "KiteJSONValidatorHeaders.h"
+
+  export *
+  module * { export * }
+}

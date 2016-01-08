@@ -35,6 +35,7 @@
 		37C8BA1E191058D2004D3E23 /* KiteJSONValidator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KiteJSONValidator-Info.plist"; sourceTree = "<group>"; };
 		37C8BA20191058D2004D3E23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		37C8BA2719105A17004D3E23 /* schema */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema; sourceTree = "<group>"; };
+		48F5D6A71C402E11005ACE43 /* KiteJSONValidatorHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KiteJSONValidatorHeaders.h; sourceTree = "<group>"; };
 		67AE80EA18929CDB00620BF5 /* KiteValidationPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KiteValidationPair.h; sourceTree = "<group>"; };
 		67AE80EB18929CDB00620BF5 /* KiteValidationPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KiteValidationPair.m; sourceTree = "<group>"; };
 		67B6B11A188C331200E1630A /* KiteJSONValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiteJSONValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +155,7 @@
 				67EDF5DE188C81CE004DEC72 /* KiteJSONValidator.m */,
 				67AE80EA18929CDB00620BF5 /* KiteValidationPair.h */,
 				67AE80EB18929CDB00620BF5 /* KiteValidationPair.m */,
+				48F5D6A71C402E11005ACE43 /* KiteJSONValidatorHeaders.h */,
 			);
 			name = KiteJSONValidator;
 			path = Sources;
@@ -326,10 +328,12 @@
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEFINES_MODULE = YES;
 				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MODULEMAP_FILE = Sources/module.modulemap;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -343,10 +347,12 @@
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEFINES_MODULE = YES;
 				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MODULEMAP_FILE = Sources/module.modulemap;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};

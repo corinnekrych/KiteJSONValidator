@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
   s.authors       = { "Sam Duke" => "samskiter@users.noreply.github.com" }
   s.version      = "0.2.2"
   s.source       = { :git => "https://github.com/samskiter/KiteJSONValidator.git", :tag => "v#{s.version}"}
+  s.public_header_files =  'Sources/KiteJSONValidator.h', 'Sources/KiteValidationPair.h'
+  s.module_map = "Sources/module.modulemap"
   s.platform     = :ios, '7.0'
   s.requires_arc = true
   s.source_files = "Sources/*.{h,m}"
